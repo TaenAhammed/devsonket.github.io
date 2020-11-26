@@ -1,0 +1,181 @@
+{
+    "id": "redis-cheat-sheet",
+    "title": "রেডিস চিটশিট",
+    "slug": "redis-cheat-sheet",
+    "description": "রেডিস হচ্ছে একটি ইন-মেমোরি ডাটা স্ট্রাকচার স্টোর যা ডাটাবেস, ক্যাশ এবং ম্যাসেজ ব্রোকার হিসেবে ব্যাবহার করা হয়ে থাকে। ইহা কি-ভ্য়ালু পেয়ার হিসেবে ডাটা স্টোর করে থাকে। এই চিটশিটে আপনি রেডিস এর ডাটা স্ট্রাকচার স্পেসিফিক কমান্ড গুলো পাবেন।",
+    "colorPref": "#61b15a",
+    "contents": [
+        {
+            "title": "স্ট্রিং",
+            "items": [
+	        	{
+                    "definition": "ভ্যালু সেট করতে",
+                    "code": "SET <key> <value>"
+                },
+	        	{
+                    "definition": "ভ্যালু গেট করতে",
+                    "code": "GET <key>"
+                },
+	        	{
+                    "definition": "ভ্যালু হতে ডাটার নির্দিষ্ট অংশ গেট করতে",
+                    "code": "GETRANGE <key> <start-index> <end-index>"
+                },
+	        	{
+                    "definition": "মাল্টিপল ভ্য়ালু একসাথে সেট করতে",
+                    "code": "MSET n সংখ্যক <key> <value> <key> <value> ..."
+                },
+	        	{
+                    "definition": "মাল্টিপল ভ্য়ালু একসাথে গেট করতে",
+                    "code": "MGET n সংখ্যক <key> ..."
+                },
+	        	{
+                    "definition": "ভ্য়ালু এর length বের করতে",
+                    "code": "STRLEN <key>"
+                },
+	        	{
+                    "definition": "কি এর নাম রিনেম করতে, নতুন করে একই কি তে ভ্য়ালু রাখলেই হবে",
+                    "code": "SET <key> <value>"
+                },
+	        	{
+                    "definition": "ইন্টিজার ভ্য়ালু সেট করতে",
+                    "code": "SET <key> <integer-value>"
+                },
+	        	{
+                    "definition": "ইন্টিজার ভ্য়ালু 1 দ্বারা increment করতে",
+                    "code": "INCR <key>"
+                },
+	        	{
+                    "definition": "ইন্টিজার ভ্য়ালু নির্দিষ্ট সংখ্য়া দ্বারা increment করতে",
+                    "code": "INCRBY <key> <value>"
+                },
+	        	{
+                    "definition": "ইন্টিজার ভ্য়ালু 1 দ্বারা decrement করতে",
+                    "code": "DECR <key>"
+                },
+	        	{
+                    "definition": "ইন্টিজার ভ্য়ালু নির্দিষ্ট সংখ্যা দ্বারা decrement করতে",
+                    "code": "DECRBY <key> <value>"
+                },
+	        	{
+                    "definition": "ফ্লোটিং পয়েন্ট ভ্য়ালু সেট করতে",
+                    "code": "SET <key> <value>"
+                },
+                {
+                    "definition": "ফ্লোটিং পয়েন্ট ভ্য়ালু নির্দিষ্ট সংখ্য়া দ্বারা increment করতে",
+                    "code": "INCRBYFLOAT <key> <value>"
+                },
+                {
+                    "definition": "Existing কি এর Expiration time সেট করতে",
+                    "code": "EXPIRE <key> <seconds>"
+                },
+                {
+                    "definition": "কি এর Expiration time কতক্ষণ বাকি আছে তা বের করতে",
+                    "code": "TTL <key>"
+                },
+                {
+                    "definition": "কি এবং এর Expiration time একসাথে সেট করতে",
+                    "code": "SETEX <key> <seconds> <value>"
+                }
+            ]
+        }, 
+        {
+            "title": "লিস্ট",
+            "items": [
+                {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "সেট",
+            "items": [
+		        {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "সর্টেট সেট",
+            "items": [
+		        {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "হাইপরলগলগ",
+            "items": [
+		        {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "হ্যাশ",
+            "items": [
+		        {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "ট্রান্সএকশন",
+            "items": [
+		        {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "পাবসাব",
+            "items": [
+		        {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "স্ক্রিপ্ট",
+            "items": [
+		        {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "কানেকশন এবং সিকিউরিটি",
+            "items": [
+		        {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "জিওস্পেশাল",
+            "items": [
+		        {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "বেঞ্চমার্ক",
+            "items": [
+		        {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        }
+    ]
+}
